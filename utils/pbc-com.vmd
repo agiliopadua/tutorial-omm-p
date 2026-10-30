@@ -1,0 +1,11 @@
+# mol new dump.lammpstrj waitfor all
+mol modstyle 0 0 VDW 1.0 12.0
+
+display projection orthographic
+display nearclip set 0.010000
+
+pbc box -center com
+pbc wrap -center com -compound fragment -all
+
+animate goto start
+
